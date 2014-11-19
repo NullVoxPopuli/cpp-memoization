@@ -117,17 +117,17 @@ int main(int argc, char *argv[])
 
     std::cout << "Duration: " << measure<>::execution([&]()
     {
-        std::cout << n << " -> " << fibonocci(n) << std::endl;
+        std::cout << "fibonocci(" << n << ") -> " << fibonocci(n) << std::endl;
     }) << std::endl;
 
     std::cout << "Duration: " << measure<>::execution([&]()
     {
 
-        std::cout << n << " -> " << fibonocci_with_memoization(n) << std::endl;
+        std::cout << "fibonocci_with_memoization(" << n << ") -> " << fibonocci_with_memoization(n) << std::endl;
     }) << std::endl;
 
     std::cout << "Duration: " << measure<>::execution([&]()
     {
-        std::cout << n << " -> " << memoized(n) << std::endl;
+        std::cout << "memoized(" << n << ") -> " << memoized(n) << std::endl;
     }) << std::endl;
 }

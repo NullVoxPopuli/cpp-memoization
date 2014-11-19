@@ -11,11 +11,11 @@ Run
 
 Observe Results!
 
-    40 -> 102334155
+    fibonocci(30) -> 102334155
     Duration: 827
-    40 -> 102334155
+    fibonocci_with_memoization(30) -> 102334155
     Duration: 0
-    40 -> 102334155
+    memoized(30) -> 102334155
     Duration: 6229
 
 
